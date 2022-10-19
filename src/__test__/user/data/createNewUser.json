@@ -1,0 +1,36 @@
+{
+  "positiveTests": {
+    "baseUserPayload": {
+      "name": "test",
+      "email": "test@gmail.com",
+      "role": "USER",
+      "password": "test@1234"
+    }
+  },
+  "negativeTests": {
+    "invalidEmail": {
+      "name": "test",
+      "email": "test",
+      "role": "USER",
+      "password": "test@1234"
+    },
+    "emailExists": {
+      "name": "test",
+      "email": "test@gmail.com",
+      "role": "USER",
+      "password": "test@1234"
+    },
+    "invalidRole": {
+      "name": "test",
+      "email": "test@gmail.com",
+      "role": "role",
+      "password": "test@1234"
+    },
+    "invalidPassword": {
+      "name": "test",
+      "email": "test@gmail.com",
+      "role": "USER",
+      "password": "test"
+    }
+  }
+}

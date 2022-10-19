@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "target": "ES6",
+    "module": "commonjs",
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@controller": ["src/controller/index"],
+      "@helpers": ["src/helpers/index"],
+      "@middleware": ["src/middleware/index"],
+      "@models": ["src/models/index"],
+      "@routes": ["src/routes/index"],
+      "@server": ["src/server/index"],
+      "@services": ["src/services/index"],
+      "@store": ["src/store/index"],
+      "@types": ["src/types/index"]
+    }
+  },
+  "include": ["./src/**/*.ts"]
+}
